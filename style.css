@@ -4,86 +4,105 @@ body {
     background: #181818;
     color: #fff;
 }
-
 .hero {
-    min-height: 88vh;
+    min-height: 78vh;
     width: 100vw;
     background: url('header.png') center center/cover no-repeat;
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
-
 .overlay {
     width: 100%;
     height: 100%;
-    background: rgba(24,24,24, 0.45); /* subtle dark overlay for readability */
+    background: rgba(24,24,24, 0.45);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     position: relative;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 55px;
+    padding-bottom: 30px;
 }
-
 .branding {
-    font-size: 2.4em;
+    font-size: 3.7em;
     font-weight: 900;
     letter-spacing: 0.15em;
     color: #fff;
     background: rgba(0,0,0,0.55);
-    padding: 0.5em 1.6em;
-    border-radius: 11px;
-    margin-bottom: 2.6em;
+    padding: 0.24em 2.2em 0.18em 2.2em;
+    border-radius: 13px;
+    margin-bottom: 2.0em;
+    margin-top: 0;
     text-transform: uppercase;
     box-shadow: 0 2px 16px rgba(0,0,0,0.18);
     display: inline-block;
 }
-
 .tagline {
     font-family: 'Georgia', 'Times New Roman', serif;
-    font-size: 3.3em;
+    font-size: 3.2em;
     font-weight: 400;
     color: #fff;
-    margin: 0 0 2.5em 0;
+    margin: 0 0 0.7em 0;
     text-shadow: 0 4px 16px rgba(0,0,0,0.23);
+    letter-spacing: 0.02em;
+    text-align: center;
 }
-
-nav {
+.bookings-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 22vh;
+    background: #181818;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+.bookings-btn {
+    background: #fff;
+    color: #232323;
+    border: none;
+    border-radius: 8px;
+    padding: 1.0em 2.8em;
+    font-size: 1.32em;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+    transition: background 0.22s, color 0.22s, box-shadow 0.22s;
     margin-top: 10px;
 }
-
-.bookings-btn {
-    background: rgba(0,0,0,0.50);
-    color: #fff;
-    border: 2px solid #fff;
-    border-radius: 7px;
-    padding: 0.65em 2.2em;
-    font-size: 1.25em;
-    text-decoration: none;
-    font-weight: 600;
-    letter-spacing: 0.06em;
-    transition: background 0.22s, color 0.22s, border 0.22s;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
-}
-
 .bookings-btn:hover {
-    background: #fff;
-    color: #222;
-    border-color: #fff;
+    background: #3a7bd5;
+    color: #fff;
+    box-shadow: 0 6px 24px rgba(40,120,210,0.12);
+    cursor: pointer;
 }
-
+.phone-number {
+    margin-top: 1.8em;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.phone-number a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 2px dotted #3a7bd5;
+    transition: color 0.2s, border-bottom 0.2s;
+}
+.phone-number a:hover {
+    color: #3a7bd5;
+    border-bottom: 2px solid #3a7bd5;
+}
 footer {
     text-align: center;
-    padding: 18px 0;
+    padding: 45px 0 24px 0;
     background: #101010;
     color: #aaa;
-    font-size: 1em;
+    font-size: 1.12em;
     position: relative;
+    margin-top: 32px;
 }
-
 .cookie-banner {
     position: fixed;
     right: 30px;
