@@ -2,23 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Saulved Home</title>
+    <title>Saulved LLC - Solutions that drive success</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="images/logo.png" alt="Saulved logo" class="logo">
-        <h1>Welcome to Saulved</h1>
-        <!-- nav as before -->
+    <header class="hero">
+        <div class="overlay">
+            <nav>
+                <ul>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://outlook.office.com/bookwithme/user/9c886b92bda84c339f2d5009458be7c6@saulved.com?anonymous&ep=plink" target="_blank">Bookings</a></li>
+                </ul>
+            </nav>
+            <h1>SAULVED LLC</h1>
+            <h2>Solutions that drive success</h2>
+        </div>
     </header>
     <main>
-        <img src="images/header.jpg" alt="Saulved Header" class="hero">
-        <h2>Your GitHub Pages Website</h2>
-        <p>This is your homepage, hosted on GitHub Pages!</p>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Drop us a line!</p>
+            <!-- Optionally add a contact form or more info here -->
+        </section>
     </main>
     <footer>
         &copy; 2025 Saulved
     </footer>
+    <!-- Optional: Cookie notice (very basic) -->
+    <div id="cookie-banner" class="cookie-banner">
+        <p>This website uses cookies to analyze website traffic and optimize your experience. <button id="accept-cookies">Accept</button></p>
+    </div>
+    <script>
+        // Simple JS for cookie banner
+        document.getElementById('accept-cookies').onclick = function() {
+            document.getElementById('cookie-banner').style.display = 'none';
+        }
+    </script>
 </body>
 </html>
