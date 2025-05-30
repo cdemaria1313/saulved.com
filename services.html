@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Saulved Services</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .services-hero {
+      background: url('header.png') center/cover no-repeat, linear-gradient(120deg,#232a46 60%, #3a7bd5 100%);
+      padding: 3em 0 2em 0;
+      color: #fff;
+      text-align: center;
+      border-radius: 0 0 24px 24px;
+      box-shadow: 0 12px 32px rgba(23,34,110,0.12);
+      margin-bottom: 2em;
+    }
+    .services-hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
+      font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+      color: #fff;
+      text-shadow: 0 2px 12px #232a4699;
+    }
+    .services-hero p {
+      font-size: 1.28em;
+      color: #e2e6f6;
+      max-width: 750px;
+      margin: 0 auto;
+    }
+    .service-table {
+      width: 100%;
+      max-width: 1080px;
+      margin: 2em auto;
+      border-collapse: collapse;
+      background: #232a46f0;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 4px 32px rgba(23,34,110,0.08);
+    }
+    .service-table th, .service-table td {
+      padding: 1.2em 1em;
+      text-align: left;
+      font-size: 1.08em;
+    }
+    .service-table th {
+      background: #3a7bd5;
+      color: #fff;
+      font-weight: 600;
+      border-bottom: 3px solid #00d2ff33;
+    }
+    .service-table tr:nth-child(even) { background: #2a3355f0; }
+    .service-table tr:nth-child(odd) { background: #22294af0; }
+    .service-table td.best { color: #ffdf00; font-weight: bold;}
+    .service-table td.better { color: #00d2ff; font-weight: bold;}
+    .service-table td.good { color: #85ff6b; font-weight: bold;}
+    @media (max-width: 900px) {
+      .service-table, .service-table thead, .service-table tbody, .service-table th, .service-table td, .service-table tr {
+        display: block;
+      }
+      .service-table th { position: sticky; top: 0; }
+      .service-table td { border: none; }
+      .service-table tr { margin-bottom: 1.2em; }
+    }
+    .section {
+      max-width: 900px;
+      margin: 2.5em auto;
+      background: #232a46e3;
+      border-radius: 14px;
+      padding: 2em 2em 1em 2em;
+      box-shadow: 0 2px 18px #3a7bd522;
+    }
+    .section h2 {
+      color: #00d2ff;
+      margin-top: 0;
+      font-size: 1.5em;
+      font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+    }
+    .advisory-fees {
+      margin: 1.8em 0 1em 0;
+      font-size: 1.1em;
+    }
+    .advisory-fees span { font-weight: bold; }
+    .section ul {
+      margin: 0;
+      padding: 0 0 0 1.4em;
+    }
+    .section li {
+      margin-bottom: 0.55em;
+      color: #e4eaf7;
+      font-size: 1.08em;
+    }
+  </style>
+</head>
+<body>
+  <div class="services-hero">
+    <h1>Saulved Technology & Advisory Services</h1>
+    <p>
+      Scalable Microsoft 365, Teams, CRM, device, security, and advisory solutions—tailored for your business. Choose the right level for your needs with our Good/Better/Best approach.
+    </p>
+  </div>
+
+  <table class="service-table" aria-label="Saulved Service Options">
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>Good</th>
+        <th>Better</th>
+        <th>Best</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Email & Collaboration</td>
+        <td class="good">M365 Business Basic<br>$6/user</td>
+        <td class="better">M365 Business Standard<br>$12.50/user</td>
+        <td class="best">M365 Business Premium<br>$22/user</td>
+      </tr>
+      <tr>
+        <td>CRM</td>
+        <td class="good">RapidStart CRM + Power Apps<br>$20/user</td>
+        <td class="better">D365 Sales Pro<br>$65/user</td>
+        <td class="best">D365 Sales Enterprise<br>$105/user</td>
+      </tr>
+      <tr>
+        <td>Voice</td>
+        <td class="good">Teams Phone Standard<br>Domestic/Int'l $20+/user</td>
+        <td class="better">Teams Phone + Altaworx SIP<br>$12/user</td>
+        <td class="best">Teams Phone + Direct Routing<br>Custom</td>
+      </tr>
+      <tr>
+        <td>Meetings</td>
+        <td class="good">Teams (included)</td>
+        <td class="better">Teams Premium<br>$12/user</td>
+        <td class="best">Teams Premium + Advanced Features</td>
+      </tr>
+      <tr>
+        <td>Devices</td>
+        <td class="good">BYOD + Intune</td>
+        <td class="better">Surface Go 3<br>$600<br>Dell/Lenovo $999-$1800</td>
+        <td class="best">Surface Pro 9 + Autopilot<br>$1,200</td>
+      </tr>
+      <tr>
+        <td>Security</td>
+        <td class="good">MFA + Defender AV</td>
+        <td class="better">Defender for Business<br>$3/user</td>
+        <td class="best">Defender for Endpoint P2<br>$5.20/user</td>
+      </tr>
+      <tr>
+        <td>Support</td>
+        <td class="good">Internal Admin</td>
+        <td class="better">Saulved Lite Support<br>$500/mo</td>
+        <td class="best">Full MSP + Support<br>$1,500+/mo</td>
+      </tr>
+      <tr>
+        <td>Implementation</td>
+        <td class="good">Internal by Saulved</td>
+        <td class="better">Partner-assisted<br>$4,500</td>
+        <td class="best">SOW Quote<br>$6,500</td>
+      </tr>
+      <tr>
+        <td>Advisory</td>
+        <td class="good">$500/mo – Basic Guidance</td>
+        <td class="better">$1,000/mo – Monthly Check-ins</td>
+        <td class="best">$2,500/mo – Fractional CTO</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="section">
+    <h2>Additional Solutions</h2>
+    <ul>
+      <li><strong>Microsoft 365 Copilot:</strong> Add-on AI productivity ($30/user)</li>
+      <li><strong>Power BI Pro:</strong> Analytics & dashboards ($14/user)</li>
+      <li><strong>M365 Backup:</strong> Cloud backup for Microsoft 365 ($3/user)</li>
+      <li><strong>Device Procurement:</strong> Surface, Dell, Lenovo, HP discounts available</li>
+      <li><strong>Security & Compliance:</strong> MFA, endpoint protection, DLP, and compliance setup</li>
+      <li><strong>Implementation & Training:</strong> Self-service or full-service onboarding, custom guides, and Microsoft Learn resources</li>
+      <li><strong>Startup & Growth Planning:</strong> Legal, HR, payroll, compliance, and funding strategy support</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>How We Deliver</h2>
+    <ul>
+      <li>Good/Better/Best packages for every need and budget</li>
+      <li>Flexible payment plans: annual, monthly, or month-to-month</li>
+      <li>Self-implementation, partner-assisted, or fully managed service</li>
+      <li>Custom branding, migration, and integration support</li>
+      <li>Dedicated account and technical advisory from Saulved experts</li>
+    </ul>
+  </div>
+
+  <footer style="text-align:center; margin:2.5em 0 1.5em 0; color:#aaa; font-size:1.08em;">
+    &copy; 2025 Saulved | Technology & Advisory Solutions
+  </footer>
+</body>
+</html>
