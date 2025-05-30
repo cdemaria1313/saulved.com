@@ -1,9 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&family=Montserrat:wght@700&display=swap');
+
 body {
     margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
     background: #181818;
     color: #fff;
 }
+
+/* Fireworks Overlay */
+#fireworks-container {
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    pointer-events: none;
+    z-index: 9999;
+    background: transparent;
+    transition: opacity 1.2s;
+}
+#fireworks-container.hide {
+    opacity: 0;
+    transition: opacity 1.2s;
+    pointer-events: none;
+}
+#fireworks {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+
+/* Hero section */
 .hero {
     min-height: 78vh;
     width: 100vw;
@@ -12,11 +36,12 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    box-shadow: 0 8px 32px rgba(23,34,110,0.12);
 }
 .overlay {
     width: 100%;
     height: 100%;
-    background: rgba(24,24,24, 0.45);
+    background: rgba(27,36,75, 0.40);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,20 +49,23 @@ body {
     position: relative;
     padding-bottom: 80px;
 }
-
 .hero-subtitle {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    font-size: 1.7em;
-    font-weight: 500;
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+    font-size: 2em;
+    font-weight: 700;
     color: #fff;
-    background: rgba(0,0,0,0.32);
-    border-radius: 7px;
-    padding: 0.6em 1.6em 0.5em 1.6em;
-    margin-bottom: 0.7em;
+    background: rgba(0,0,0,0.26);
+    border-radius: 10px;
+    padding: 0.6em 1.7em 0.5em 1.7em;
+    margin-bottom: 0.6em;
     text-align: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.13);
+    box-shadow: 0 4px 18px rgba(0,30,120,0.13);
+    letter-spacing: 0.01em;
+    border-left: 5px solid #3a7bd5;
+    border-right: 5px solid #3a7bd5;
 }
 
+/* Bookings section */
 .bookings-section {
     display: flex;
     flex-direction: column;
@@ -49,24 +77,26 @@ body {
     margin-bottom: 40px;
 }
 .bookings-btn {
-    background: #fff;
-    color: #232323;
+    background: linear-gradient(90deg,#3a7bd5 0%,#00d2ff 100%);
+    color: #fff;
     border: none;
-    border-radius: 8px;
+    border-radius: 9px;
     padding: 1.0em 2.8em;
     font-size: 1.32em;
     text-decoration: none;
     font-weight: 700;
-    letter-spacing: 0.04em;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.18);
-    transition: background 0.22s, color 0.22s, box-shadow 0.22s;
+    letter-spacing: 0.05em;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.16);
+    transition: background 0.22s, color 0.22s, box-shadow 0.22s, transform 0.16s;
     margin-top: 10px;
+    outline: none;
 }
 .bookings-btn:hover {
-    background: #3a7bd5;
+    background: linear-gradient(90deg,#00d2ff 0%,#3a7bd5 100%);
     color: #fff;
-    box-shadow: 0 6px 24px rgba(40,120,210,0.12);
+    box-shadow: 0 6px 24px rgba(40,120,210,0.18);
     cursor: pointer;
+    transform: scale(1.04);
 }
 .phone-number {
     margin-top: 1.8em;
