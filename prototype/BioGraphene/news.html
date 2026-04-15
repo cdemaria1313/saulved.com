@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>News — Bio-Graphene Global, Inc.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2em;
+      margin-top: 2.5em;
+    }
+    .news-card {
+      background: var(--white);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: transform 0.15s;
+      display: flex;
+      flex-direction: column;
+    }
+    .news-card:hover { transform: translateY(-3px); }
+    .news-card-img {
+      height: 180px;
+      background: linear-gradient(135deg, #0d2b1a, #1b5e35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .news-card-body { padding: 1.6em; flex: 1; display: flex; flex-direction: column; }
+    .news-tag {
+      font-size: 0.72em;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--green-bright);
+      margin-bottom: 0.6em;
+    }
+    .news-card-body h3 {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 1.05em;
+      font-weight: 700;
+      color: var(--graphite);
+      margin-bottom: 0.7em;
+      line-height: 1.4;
+    }
+    .news-card-body p { color: var(--text-light); font-size: 0.93em; line-height: 1.7; flex: 1; }
+    .news-meta {
+      margin-top: 1.2em;
+      font-size: 0.82em;
+      color: #9ab0a0;
+    }
+    .news-card-body a.read-more {
+      display: inline-block;
+      margin-top: 1.2em;
+      color: var(--green-bright);
+      font-weight: 600;
+      font-size: 0.88em;
+      text-decoration: none;
+      border-bottom: 1px solid var(--border);
+      transition: color 0.2s;
+    }
+    .news-card-body a.read-more:hover { color: var(--green-light); }
+    @media (max-width: 480px) { .news-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">
+        <svg width="38" height="38" viewBox="0 0 38 38" fill="none">
+          <polygon points="19,2 34,10.5 34,27.5 19,36 4,27.5 4,10.5" fill="none" stroke="#4db87a" stroke-width="1.8"/>
+          <circle cx="19" cy="19" r="3" fill="#4db87a"/>
+          <circle cx="11" cy="14.5" r="1.5" fill="#4db87a" opacity="0.55"/>
+          <circle cx="27" cy="14.5" r="1.5" fill="#4db87a" opacity="0.55"/>
+          <circle cx="11" cy="23.5" r="1.5" fill="#4db87a" opacity="0.55"/>
+          <circle cx="27" cy="23.5" r="1.5" fill="#4db87a" opacity="0.55"/>
+          <line x1="19" y1="16.2" x2="11" y2="14.5" stroke="#4db87a" stroke-width="1" opacity="0.45"/>
+          <line x1="19" y1="16.2" x2="27" y2="14.5" stroke="#4db87a" stroke-width="1" opacity="0.45"/>
+          <line x1="19" y1="21.8" x2="11" y2="23.5" stroke="#4db87a" stroke-width="1" opacity="0.45"/>
+          <line x1="19" y1="21.8" x2="27" y2="23.5" stroke="#4db87a" stroke-width="1" opacity="0.45"/>
+        </svg>
+        <div class="nav-brand-text">
+          <span class="nav-brand-name">Bio-Graphene Global</span>
+          <span class="nav-brand-tagline">Sustainable Materials Innovation</span>
+        </div>
+      </a>
+      <div class="nav-toggle" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="sustainability.html">Sustainability</a>
+        <a href="technology.html">Technology</a>
+        <a href="markets.html">Markets</a>
+        <a href="investors.html">Investors</a>
+        <a href="news.html" class="active">News</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <div class="hex-bg"></div>
+    <p class="eyebrow" style="position:relative;z-index:1;">Latest Updates</p>
+    <h1>News &amp; Announcements</h1>
+    <p>Company milestones, research updates, and industry developments.</p>
+  </div>
+
+  <section class="section pillars">
+    <div class="section-inner">
+      <span class="section-label">Recent News</span>
+      <h2>What's Happening at BGG</h2>
+      <div class="news-grid">
+
+        <div class="news-card">
+          <div class="news-card-img">
+            <svg width="48" height="48" viewBox="0 0 38 38" fill="none" opacity="0.4">
+              <polygon points="19,2 34,10.5 34,27.5 19,36 4,27.5 4,10.5" fill="none" stroke="#4db87a" stroke-width="1.5"/>
+              <circle cx="19" cy="19" r="4" fill="#4db87a"/>
+            </svg>
+          </div>
+          <div class="news-card-body">
+            <span class="news-tag">Announcement</span>
+            <h3>[Headline placeholder — e.g. Bio-Graphene Global Completes Phase 1 Validation with Major Concrete Producer]</h3>
+            <p>[Summary placeholder — 2–3 sentences describing the announcement, its significance, and what comes next.]</p>
+            <span class="news-meta">Month DD, 2025</span>
+            <a href="#" class="read-more">Read more →</a>
+          </div>
+        </div>
+
+        <div class="news-card">
+          <div class="news-card-img">
+            <svg width="48" height="48" viewBox="0 0 38 38" fill="none" opacity="0.4">
+              <polygon points="19,2 34,10.5 34,27.5 19,36 4,27.5 4,10.5" fill="none" stroke="#4db87a" stroke-width="1.5"/>
+              <circle cx="19" cy="19" r="4" fill="#4db87a"/>
+            </svg>
+          </div>
+          <div class="news-card-body">
+            <span class="news-tag">Research</span>
+            <h3>[Headline placeholder — e.g. New Study Confirms Biographene Reduces Cement Content by X% Without Compromising Strength]</h3>
+            <p>[Summary placeholder — 2–3 sentences on the research finding, methodology, and implications for the concrete industry.]</p>
+            <span class="news-meta">Month DD, 2025</span>
+            <a href="#" class="read-more">Read more →</a>
+          </div>
+        </div>
+
+        <div class="news-card">
+          <div class="news-card-img">
+            <svg width="48" height="48" viewBox="0 0 38 38" fill="none" opacity="0.4">
+              <polygon points="19,2 34,10.5 34,27.5 19,36 4,27.5 4,10.5" fill="none" stroke="#4db87a" stroke-width="1.5"/>
+              <circle cx="19" cy="19" r="4" fill="#4db87a"/>
+            </svg>
+          </div>
+          <div class="news-card-body">
+            <span class="news-tag">Partnership</span>
+            <h3>[Headline placeholder — e.g. Bio-Graphene Global Opens Innovation Centre in Cambridge, Ontario]</h3>
+            <p>[Summary placeholder — 2–3 sentences on the partnership or milestone, who is involved, and what it enables.]</p>
+            <span class="news-meta">Month DD, 2025</span>
+            <a href="#" class="read-more">Read more →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-strip">
+    <h2>Stay Informed</h2>
+    <p>Reach out to be added to our investor and industry update list.</p>
+    <a href="contact.html" class="btn-white">Contact Us</a>
+  </div>
+
+  <footer>
+    <div class="footer-brand">
+      <svg width="28" height="28" viewBox="0 0 38 38" fill="none">
+        <polygon points="19,2 34,10.5 34,27.5 19,36 4,27.5 4,10.5" fill="none" stroke="#4a7a56" stroke-width="1.8"/>
+        <circle cx="19" cy="19" r="3" fill="#4a7a56"/>
+      </svg>
+      <span class="footer-brand-name">Bio-Graphene Global, Inc.</span>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="sustainability.html">Sustainability</a>
+      <a href="technology.html">Technology</a><a href="markets.html">Markets</a><a href="investors.html">Investors</a>
+      <a href="news.html">News</a><a href="contact.html">Contact</a>
+    </div>
+    <p class="footer-copy">&copy; 2025 Bio-Graphene Global, Inc. All rights reserved.</p>
+    <p class="footer-proto">Prototype developed by <a href="https://saulved.com" style="color:#2a4a30;">Saulved LLC</a>.</p>
+  </footer>
+
+</body>
+</html>
