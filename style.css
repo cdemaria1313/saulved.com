@@ -7,26 +7,6 @@ body {
     color: #fff;
 }
 
-/* Fireworks Overlay */
-#fireworks-container {
-    position: fixed;
-    top: 0; left: 0; width: 100vw; height: 100vh;
-    pointer-events: none;
-    z-index: 9999;
-    background: transparent;
-    transition: opacity 1.2s;
-}
-#fireworks-container.hide {
-    opacity: 0;
-    transition: opacity 1.2s;
-    pointer-events: none;
-}
-#fireworks {
-    width: 100vw;
-    height: 100vh;
-    display: block;
-}
-
 /* Hero section */
 .hero {
     min-height: 78vh;
@@ -113,6 +93,59 @@ body {
     color: #3a7bd5;
     border-bottom: 2px solid #3a7bd5;
 }
+.services-link {
+    display: inline-block;
+    margin-top: 1.2em;
+    color: #00d2ff;
+    font-size: 1.08em;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    border-bottom: 2px dotted #00d2ff;
+    transition: color 0.2s, border-bottom 0.2s;
+}
+.services-link:hover {
+    color: #3a7bd5;
+    border-bottom: 2px solid #3a7bd5;
+}
+
+/* Microsoft Partner badge */
+.partner-section {
+    display: flex;
+    justify-content: center;
+    padding: 2em 1em 1em 1em;
+    background: #181818;
+}
+.partner-badge {
+    display: flex;
+    align-items: center;
+    gap: 1.2em;
+    background: #232a46;
+    border-radius: 12px;
+    padding: 1.2em 2.2em;
+    box-shadow: 0 2px 18px rgba(58,123,213,0.13);
+    border-left: 4px solid #3a7bd5;
+}
+.partner-badge img {
+    height: 48px;
+    width: auto;
+}
+.partner-text {
+    display: flex;
+    flex-direction: column;
+}
+.partner-title {
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+    font-size: 1.15em;
+    font-weight: 700;
+    color: #fff;
+}
+.partner-sub {
+    font-size: 0.92em;
+    color: #8ab4f8;
+    margin-top: 0.2em;
+}
+
 footer {
     text-align: center;
     padding: 45px 0 24px 0;
