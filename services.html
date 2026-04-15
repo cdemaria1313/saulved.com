@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <style>
     .services-hero {
-      background: url('header.png') center/cover no-repeat, linear-gradient(120deg,#232a46 60%, #3a7bd5 100%);
+      background: linear-gradient(120deg,#1b2450 0%, #232a46 50%, #3a7bd5 100%);
       padding: 3em 0 2em 0;
       color: #fff;
       text-align: center;
@@ -93,6 +93,13 @@
   </style>
 </head>
 <body>
+  <nav class="site-nav">
+      <a class="nav-logo" href="index.html">Saulved</a>
+      <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services &amp; Pricing</a>
+      </div>
+  </nav>
   <div class="services-hero">
     <h1>Saulved Technology & Advisory Services</h1>
     <p>
@@ -118,14 +125,14 @@
       </tr>
       <tr>
         <td>CRM</td>
-        <td class="good">RapidStart CRM + Power Apps<br>$20/user</td>
-        <td class="better">D365 Sales Pro<br>$65/user</td>
-        <td class="best">D365 Sales Enterprise<br>$105/user</td>
+        <td class="good">RapidStart CRM<br>Included, first 10 users<br><small>+ Power Apps $5–6/user</small></td>
+        <td class="better">RapidStart + Additional Users<br>$15/user<br><small>+ Power Apps Premium $20–24/user</small></td>
+        <td class="best">Full Power Apps Premium<br>$20–24/user<br><small>Role-based licensing</small></td>
       </tr>
       <tr>
         <td>Voice</td>
-        <td class="good">Teams Phone Standard<br>Domestic/Int'l $20+/user</td>
-        <td class="better">Teams Phone + Altaworx SIP<br>$12/user</td>
+        <td class="good">Teams Phone w/ Calling Plan<br>Domestic $17/user<br>Int'l $40/user</td>
+        <td class="better">Teams Phone + SIP<br>Starting at $12/user</td>
         <td class="best">Teams Phone + Direct Routing<br>Custom</td>
       </tr>
       <tr>
@@ -154,9 +161,9 @@
       </tr>
       <tr>
         <td>Implementation</td>
-        <td class="good">Internal by Saulved</td>
+        <td class="good">Self-service w/ guidance</td>
         <td class="better">Partner-assisted<br>$4,500</td>
-        <td class="best">SOW Quote<br>$6,500</td>
+        <td class="best">Full SOW-based<br>$6,500+</td>
       </tr>
       <tr>
         <td>Advisory</td>
@@ -168,15 +175,116 @@
   </table>
 
   <div class="section">
-    <h2>Additional Solutions</h2>
+    <h2>CRM &amp; Business Applications — RapidStart</h2>
+    <p style="color:#8ab4f8; margin-bottom:1.2em; font-size:0.97em;">Built on Microsoft Power Platform. Power Apps licensing required.</p>
+    <table class="service-table" aria-label="RapidStart Pricing">
+      <thead>
+        <tr>
+          <th>Component</th>
+          <th>Description</th>
+          <th>Pricing</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>RapidStart CRM (Sales &amp; Service)</td>
+          <td>Pre-configured CRM for Teams-first organizations</td>
+          <td class="good">Included, first 10 users</td>
+        </tr>
+        <tr>
+          <td>RapidStart Project</td>
+          <td>Project tracking &amp; delivery management</td>
+          <td class="good">Included, first 10 users</td>
+        </tr>
+        <tr>
+          <td>RapidStart Additional Users</td>
+          <td>CRM or Project access beyond first 10 users</td>
+          <td class="better">$15 / user</td>
+        </tr>
+        <tr>
+          <td>Power Apps Premium</td>
+          <td>Required for full CRM users, admins &amp; app makers</td>
+          <td class="better">$20–24 / user</td>
+        </tr>
+        <tr>
+          <td>Power Apps Per App</td>
+          <td>For light / task-based users</td>
+          <td class="good">$5–6 / user</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="color:#85ff6b; margin-top:1em; font-size:0.95em;">&#10003; Not all users require Power Apps Premium — licensing is role-based.</p>
+  </div>
+
+  <div class="section">
+    <h2>&#11088; Fully Functioning Microsoft Teams — Best Tier Example</h2>
+    <p style="color:#e4eaf7; margin-bottom:0.8em;">A typical executive-grade Teams environment includes:</p>
     <ul>
-      <li><strong>Microsoft 365 Copilot:</strong> Add-on AI productivity ($30/user)</li>
-      <li><strong>Power BI Pro:</strong> Analytics & dashboards ($14/user)</li>
-      <li><strong>M365 Backup:</strong> Cloud backup for Microsoft 365 ($3/user)</li>
-      <li><strong>Device Procurement:</strong> Surface, Dell, Lenovo, HP discounts available</li>
-      <li><strong>Security & Compliance:</strong> MFA, endpoint protection, DLP, and compliance setup</li>
-      <li><strong>Implementation & Training:</strong> Self-service or full-service onboarding, custom guides, and Microsoft Learn resources</li>
-      <li><strong>Startup & Growth Planning:</strong> Legal, HR, payroll, compliance, and funding strategy support</li>
+      <li>Microsoft 365 Business Premium</li>
+      <li>Teams Premium</li>
+      <li>Teams Phone (Domestic or International Calling)</li>
+      <li>Security, device management, governance, and backup</li>
+    </ul>
+    <p style="margin-top:1em; color:#ffdf00; font-weight:600;">Typical fully loaded cost:</p>
+    <ul>
+      <li>Domestic Calling: <strong>~$52–$62 / user</strong></li>
+      <li>International Calling: <strong>~$69–$82 / user</strong></li>
+    </ul>
+    <p style="color:#8ab4f8; font-size:0.92em;">Billing commitment affects final pricing.</p>
+  </div>
+
+  <div class="section">
+    <h2>Additional Add-On Solutions</h2>
+    <table class="service-table" aria-label="Add-On Solutions">
+      <thead>
+        <tr>
+          <th>Solution</th>
+          <th>Description</th>
+          <th>Pricing</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Microsoft 365 Copilot</td>
+          <td>AI across email, meetings, and documents</td>
+          <td class="better">$30–31.50 / user</td>
+        </tr>
+        <tr>
+          <td>Power BI Pro</td>
+          <td>Analytics &amp; dashboards</td>
+          <td class="better">$14–16.80 / user</td>
+        </tr>
+        <tr>
+          <td>Power Automate Premium</td>
+          <td>Advanced workflows</td>
+          <td class="better">$15–18 / user</td>
+        </tr>
+        <tr>
+          <td>Power Automate Process</td>
+          <td>Enterprise process automation</td>
+          <td class="best">$150–180 / month</td>
+        </tr>
+        <tr>
+          <td>Copilot Studio</td>
+          <td>Custom AI agents &amp; bots</td>
+          <td class="best">$200–210 / month</td>
+        </tr>
+        <tr>
+          <td>Microsoft 365 Backup</td>
+          <td>Backup for Exchange, OneDrive &amp; SharePoint</td>
+          <td class="good">$3 / user</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Licensing Transparency</h2>
+    <ul>
+      <li>RapidStart requires Microsoft 365 and Power Apps licensing.</li>
+      <li>We license only what each role needs — no blanket over-licensing.</li>
+      <li>Flexible payment plans: annual, monthly, or month-to-month.</li>
+      <li>Self-implementation, partner-assisted, or fully managed service.</li>
     </ul>
   </div>
 
@@ -184,10 +292,10 @@
     <h2>How We Deliver</h2>
     <ul>
       <li>Good/Better/Best packages for every need and budget</li>
-      <li>Flexible payment plans: annual, monthly, or month-to-month</li>
-      <li>Self-implementation, partner-assisted, or fully managed service</li>
       <li>Custom branding, migration, and integration support</li>
       <li>Dedicated account and technical advisory from Saulved experts</li>
+      <li>Device procurement: Surface, Dell, Lenovo, HP discounts available</li>
+      <li>Startup &amp; growth planning: legal, HR, payroll, compliance, and funding strategy support</li>
     </ul>
   </div>
 
