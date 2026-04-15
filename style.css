@@ -190,3 +190,93 @@ footer {
     position: relative;
     margin-top: 32px;
 }
+
+/* ── Tablet (≤768px) ── */
+@media (max-width: 768px) {
+    .site-nav {
+        padding: 0.65em 1.2em;
+    }
+    .nav-logo {
+        font-size: 1.3em;
+    }
+    .nav-links {
+        gap: 1.2em;
+    }
+    .nav-links a {
+        font-size: 0.9em;
+    }
+    .hero {
+        min-height: 55vh;
+    }
+    .hero-subtitle {
+        font-size: 1.1em;
+        padding: 0.5em 1em;
+        margin: 0 1em 0.6em 1em;
+    }
+    .overlay {
+        padding-bottom: 50px;
+    }
+    .bookings-btn {
+        font-size: 1.1em;
+        padding: 0.9em 1.8em;
+        width: 80%;
+        text-align: center;
+    }
+    .phone-number {
+        font-size: 1.25em;
+    }
+    .partner-badge {
+        padding: 1em 1.4em;
+    }
+}
+
+/* ── Mobile (≤480px) ── */
+@media (max-width: 480px) {
+    .site-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5em;
+        padding: 0.75em 1em;
+    }
+    .nav-links {
+        gap: 1em;
+        width: 100%;
+    }
+    .nav-links a {
+        font-size: 0.88em;
+    }
+    .hero {
+        min-height: 45vh;
+    }
+    .hero-subtitle {
+        font-size: 0.97em;
+        padding: 0.5em 0.8em;
+        margin: 0 0.5em 0.5em 0.5em;
+        border-left: 3px solid #3a7bd5;
+        border-right: 3px solid #3a7bd5;
+    }
+    .overlay {
+        padding-bottom: 30px;
+    }
+    .bookings-btn {
+        font-size: 1em;
+        padding: 0.85em 1em;
+        width: 90%;
+        letter-spacing: 0.01em;
+    }
+    .services-link {
+        font-size: 0.97em;
+    }
+    .phone-number {
+        font-size: 1.1em;
+    }
+    .partner-badge {
+        flex-direction: column;
+        text-align: center;
+        padding: 1em;
+        gap: 0.7em;
+    }
+    .partner-badge img {
+        height: 38px;
+    }
+}

@@ -52,13 +52,27 @@
     .service-table td.best { color: #ffdf00; font-weight: bold;}
     .service-table td.better { color: #00d2ff; font-weight: bold;}
     .service-table td.good { color: #85ff6b; font-weight: bold;}
-    @media (max-width: 900px) {
-      .service-table, .service-table thead, .service-table tbody, .service-table th, .service-table td, .service-table tr {
-        display: block;
-      }
-      .service-table th { position: sticky; top: 0; }
-      .service-table td { border: none; }
-      .service-table tr { margin-bottom: 1.2em; }
+    .table-scroll {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin: 2em auto;
+      max-width: 1080px;
+      border-radius: 18px;
+    }
+    .table-scroll .service-table {
+      margin: 0;
+      min-width: 600px;
+    }
+    @media (max-width: 768px) {
+      .services-hero h1 { font-size: 1.6em; }
+      .services-hero p  { font-size: 0.97em; }
+      .section { padding: 1.4em 1em; margin: 1.5em 0.8em; }
+      .section h2 { font-size: 1.2em; }
+    }
+    @media (max-width: 480px) {
+      .services-hero { padding: 1.5em 1em; }
+      .services-hero h1 { font-size: 1.3em; }
+      .section { padding: 1em 0.8em; margin: 1em 0.4em; }
     }
     .section {
       max-width: 900px;
@@ -106,6 +120,7 @@
     </p>
   </div>
 
+  <div class="table-scroll">
   <table class="service-table" aria-label="Saulved Service Options">
     <thead>
       <tr>
@@ -172,10 +187,12 @@
       </tr>
     </tbody>
   </table>
+  </div>
 
   <div class="section">
     <h2>CRM &amp; Business Applications — RapidStart</h2>
     <p style="color:#8ab4f8; margin-bottom:1.2em; font-size:0.97em;">Built on Microsoft Power Platform. Power Apps licensing required.</p>
+    <div class="table-scroll">
     <table class="service-table" aria-label="RapidStart Pricing">
       <thead>
         <tr>
@@ -212,6 +229,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
     <p style="color:#85ff6b; margin-top:1em; font-size:0.95em;">&#10003; Not all users require Power Apps Premium — licensing is role-based.</p>
   </div>
 
@@ -234,6 +252,7 @@
 
   <div class="section">
     <h2>Additional Add-On Solutions</h2>
+    <div class="table-scroll">
     <table class="service-table" aria-label="Add-On Solutions">
       <thead>
         <tr>
@@ -275,6 +294,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
   </div>
 
   <div class="section">
