@@ -57,7 +57,7 @@ Pure static HTML/CSS, no framework, no build step.
 - [ ] Review and approve about.html copy
 - [ ] Provide 3 real news items for news.html
 - [ ] Confirm or update the $18B+ / 5% CAGR market figures on markets and investors pages
-- [ ] Confirm Cambridge, Ontario Innovation Centre address
+- [x] Location updated to Spokane, WA across all pages (contact, about, investors, news)
 
 ### For the developer (technical):
 - [ ] **Get a domain** — e.g. `biographeneglobal.com` or similar (register via GoDaddy or Namecheap)
