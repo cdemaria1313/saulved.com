@@ -61,13 +61,14 @@ Pure static HTML/CSS, no framework, no build step.
 
 ### For the developer (technical):
 - [ ] **Get a domain** — e.g. `biographeneglobal.com` or similar (register via GoDaddy or Namecheap)
-- [ ] **Move to its own GitHub repo** — `git subtree split` or just copy files to a new repo
-- [ ] **Set up Netlify hosting** — connect GitHub repo, point custom domain
-- [ ] **Add Decap CMS** — gives client a `/admin` UI to update News, Investors content themselves
-- [ ] **Wire up contact form** — use Netlify Forms (free, no backend needed) or Formspree
-- [ ] **Add favicon** — create a small version of the hexagonal SVG logo
+- [ ] **Move to its own GitHub repo** — waiting on client approval
+- [ ] **Set up Netlify hosting** — blocked until own repo/domain exists (site currently on GitHub Pages)
+- [ ] **Add Decap CMS** — blocked until on Netlify
+- [ ] **Wire up contact form** — blocked until on Netlify (Netlify Forms) or use Formspree as interim
+- [x] **Add favicon** — `favicon.svg` created (hex lattice logo, dark green background, 32×32) — April 15 2026
 - [ ] Remove "Prototype developed by Saulved LLC" footer note when going live
-- [ ] Add real meta descriptions and Open Graph tags for SEO/social sharing
+- [x] **Add meta descriptions and Open Graph tags** — added to all 8 pages — April 15 2026
+- [x] **Polish placeholder pages** — `[Client to provide]` blocks replaced with styled `.pending` class (green left-border, italic, "Content pending" label) across sustainability, technology, and markets — April 15 2026
 
 ---
 
