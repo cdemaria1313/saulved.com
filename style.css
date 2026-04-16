@@ -92,6 +92,16 @@ body {
   padding: 0.45em 1.2em;
 }
 .nav-links a.nav-cta:hover { background: var(--blue-light); }
+.nav-phone {
+  color: rgba(255,255,255,0.55);
+  text-decoration: none;
+  font-size: 0.88em;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: color 0.2s;
+  white-space: nowrap;
+}
+.nav-phone:hover { color: var(--blue-light); }
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -673,6 +683,7 @@ details.faq-item[open] summary::after {
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
   .nav-toggle { display: flex; }
+  .nav-phone { display: none; }
   .nav-links {
     display: none;
     position: absolute;
