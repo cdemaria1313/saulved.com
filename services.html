@@ -2,324 +2,296 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Saulved Services</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Services &amp; Pricing — Saulved LLC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
-  <style>
-    .services-hero {
-      background: #131929;
-      border-bottom: 3px solid #3a7bd5;
-      padding: 2.2em 2em 1.8em 2em;
-      text-align: center;
-      margin-bottom: 2em;
-    }
-    .services-hero h1 {
-      font-size: 2.2em;
-      margin: 0 0 0.4em 0;
-      font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
-      color: #fff;
-      letter-spacing: 0.01em;
-    }
-    .services-hero p {
-      font-size: 1.05em;
-      color: #8ab4f8;
-      max-width: 680px;
-      margin: 0 auto;
-    }
-    .service-table {
-      width: 100%;
-      max-width: 1080px;
-      margin: 2em auto;
-      border-collapse: collapse;
-      background: #232a46f0;
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: 0 4px 32px rgba(23,34,110,0.08);
-    }
-    .service-table th, .service-table td {
-      padding: 1.2em 1em;
-      text-align: left;
-      font-size: 1.08em;
-    }
-    .service-table th {
-      background: #3a7bd5;
-      color: #fff;
-      font-weight: 600;
-      border-bottom: 3px solid #00d2ff33;
-    }
-    .service-table tr:nth-child(even) { background: #2a3355f0; }
-    .service-table tr:nth-child(odd) { background: #22294af0; }
-    .service-table td.best { color: #ffdf00; font-weight: bold;}
-    .service-table td.better { color: #00d2ff; font-weight: bold;}
-    .service-table td.good { color: #85ff6b; font-weight: bold;}
-    .table-scroll {
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-      margin: 2em auto;
-      max-width: 1080px;
-      border-radius: 18px;
-    }
-    .table-scroll .service-table {
-      margin: 0;
-      min-width: 600px;
-    }
-    @media (max-width: 768px) {
-      .services-hero h1 { font-size: 1.6em; }
-      .services-hero p  { font-size: 0.97em; }
-      .section { padding: 1.4em 1em; margin: 1.5em 0.8em; }
-      .section h2 { font-size: 1.2em; }
-    }
-    @media (max-width: 480px) {
-      .services-hero { padding: 1.5em 1em; }
-      .services-hero h1 { font-size: 1.3em; }
-      .section { padding: 1em 0.8em; margin: 1em 0.4em; }
-    }
-    .section {
-      max-width: 900px;
-      margin: 2.5em auto;
-      background: #232a46e3;
-      border-radius: 14px;
-      padding: 2em 2em 1em 2em;
-      box-shadow: 0 2px 18px #3a7bd522;
-    }
-    .section h2 {
-      color: #00d2ff;
-      margin-top: 0;
-      font-size: 1.5em;
-      font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
-    }
-    .advisory-fees {
-      margin: 1.8em 0 1em 0;
-      font-size: 1.1em;
-    }
-    .advisory-fees span { font-weight: bold; }
-    .section ul {
-      margin: 0;
-      padding: 0 0 0 1.4em;
-    }
-    .section li {
-      margin-bottom: 0.55em;
-      color: #e4eaf7;
-      font-size: 1.08em;
-    }
-  </style>
+  <meta name="description" content="Saulved LLC services and pricing — Microsoft 365, Teams, CRM, security, advisory, hardware procurement, and managed services.">
 </head>
 <body>
-  <nav class="site-nav">
-      <a class="nav-logo" href="index.html">Saulved</a>
-      <div class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="services.html">Services &amp; Pricing</a>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">
+        <div class="nav-brand-text">
+          <span class="nav-brand-name">Saulved</span>
+          <span class="nav-brand-tagline">Microsoft Partner &middot; Technology Advisor</span>
+        </div>
+      </a>
+      <div class="nav-toggle" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
       </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html" class="active">Services &amp; Pricing</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+      </div>
+    </div>
   </nav>
-  <div class="services-hero">
-    <h1>Saulved Technology & Advisory Services</h1>
-    <p>
-      Scalable Microsoft 365, Teams, CRM, device, security, and advisory solutions—tailored for your business. Choose the right level for your needs with our Good/Better/Best approach.
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <span class="eyebrow">What We Offer</span>
+    <h1>Saulved Technology &amp; Advisory Services</h1>
+    <p>Scalable Microsoft 365, Teams, CRM, device, security, and advisory solutions — tailored for your business. Choose the right level with our Good / Better / Best approach.</p>
+  </div>
+
+  <!-- MAIN PRICING TABLE -->
+  <section class="section" style="background: var(--white);">
+    <div class="section-inner">
+      <span class="section-label">Service Options</span>
+      <h2>Good / Better / Best</h2>
+      <div class="table-scroll">
+        <table class="service-table" aria-label="Saulved Service Options">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Good</th>
+              <th>Better</th>
+              <th>Best</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Email &amp; Collaboration</td>
+              <td class="tier-good">M365 Business Basic<br>$6/user</td>
+              <td class="tier-better">M365 Business Standard<br>$12.50/user</td>
+              <td class="tier-best">M365 Business Premium<br>$22/user</td>
+            </tr>
+            <tr>
+              <td>CRM</td>
+              <td class="tier-good">RapidStart CRM<br>Included, first 10 users<small>+ Power Apps $5–6/user</small></td>
+              <td class="tier-better">RapidStart + Additional Users<br>$15/user<small>+ Power Apps Premium $20–24/user</small></td>
+              <td class="tier-best">Full Power Apps Premium<br>$20–24/user<small>Role-based licensing</small></td>
+            </tr>
+            <tr>
+              <td>Voice</td>
+              <td class="tier-good">Teams Phone w/ Calling Plan<br>Domestic $17/user<br>Int'l $40/user</td>
+              <td class="tier-better">Teams Phone + SIP<br>Starting at $12/user</td>
+              <td class="tier-best">Teams Phone + Direct Routing<br>Custom</td>
+            </tr>
+            <tr>
+              <td>Meetings</td>
+              <td class="tier-good">Teams (included)</td>
+              <td class="tier-better">Teams Premium<br>$12/user</td>
+              <td class="tier-best">Teams Premium + Advanced Features</td>
+            </tr>
+            <tr>
+              <td>Devices</td>
+              <td class="tier-good">BYOD + Intune</td>
+              <td class="tier-better">Surface Go 3 — $600<br>Dell/Lenovo $999–$1,800</td>
+              <td class="tier-best">Surface Pro 9 + Autopilot<br>$1,200</td>
+            </tr>
+            <tr>
+              <td>Security</td>
+              <td class="tier-good">MFA + Defender AV</td>
+              <td class="tier-better">Defender for Business<br>$3/user</td>
+              <td class="tier-best">Defender for Endpoint P2<br>$5.20/user</td>
+            </tr>
+            <tr>
+              <td>Support</td>
+              <td class="tier-good">Internal Admin</td>
+              <td class="tier-better">Saulved Lite Support<br>$500/mo</td>
+              <td class="tier-best">Full MSP + Support<br>$1,500+/mo</td>
+            </tr>
+            <tr>
+              <td>Implementation</td>
+              <td class="tier-good">Self-service w/ guidance</td>
+              <td class="tier-better">Partner-assisted<br>$4,500</td>
+              <td class="tier-best">Full SOW-based<br>$6,500+</td>
+            </tr>
+            <tr>
+              <td>Advisory</td>
+              <td class="tier-good">$500/mo – Basic Guidance</td>
+              <td class="tier-better">$1,000/mo – Monthly Check-ins</td>
+              <td class="tier-best">$2,500/mo – Fractional CTO</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- CRM DETAIL -->
+  <section class="section" style="background: var(--bg); padding-top: 0.5em;">
+    <div class="section-inner">
+      <span class="section-label">CRM &amp; Business Applications</span>
+      <h2>RapidStart — Built on Microsoft Power Platform</h2>
+      <p class="section-intro" style="margin-bottom: 1em;">Power Apps licensing required. Not all users need Premium — licensing is role-based.</p>
+      <div class="table-scroll">
+        <table class="service-table" aria-label="RapidStart Pricing">
+          <thead>
+            <tr>
+              <th>Component</th>
+              <th>Description</th>
+              <th>Pricing</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>RapidStart CRM (Sales &amp; Service)</td>
+              <td>Pre-configured CRM for Teams-first organizations</td>
+              <td class="tier-good">Included, first 10 users</td>
+            </tr>
+            <tr>
+              <td>RapidStart Project</td>
+              <td>Project tracking &amp; delivery management</td>
+              <td class="tier-good">Included, first 10 users</td>
+            </tr>
+            <tr>
+              <td>RapidStart Additional Users</td>
+              <td>CRM or Project access beyond first 10 users</td>
+              <td class="tier-better">$15 / user</td>
+            </tr>
+            <tr>
+              <td>Power Apps Premium</td>
+              <td>Required for full CRM users, admins &amp; app makers</td>
+              <td class="tier-better">$20–24 / user</td>
+            </tr>
+            <tr>
+              <td>Power Apps Per App</td>
+              <td>For light / task-based users</td>
+              <td class="tier-good">$5–6 / user</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEST TIER EXAMPLE -->
+  <section class="section section-dark">
+    <div class="section-inner">
+      <span class="section-label">Best Tier Example</span>
+      <h2>Fully Functioning Microsoft Teams Environment</h2>
+      <p class="section-intro">A typical executive-grade Teams environment includes:</p>
+      <div class="card-grid">
+        <div class="card card-dark">
+          <h3>What's Included</h3>
+          <ul>
+            <li>Microsoft 365 Business Premium</li>
+            <li>Teams Premium</li>
+            <li>Teams Phone (Domestic or International Calling)</li>
+            <li>Security, device management, governance, and backup</li>
+          </ul>
+        </div>
+        <div class="card card-dark">
+          <h3>Typical Fully Loaded Cost</h3>
+          <p>Domestic Calling: <strong style="color:#fff;">~$52–$62 / user</strong></p>
+          <p style="margin-top:0.5em;">International Calling: <strong style="color:#fff;">~$69–$82 / user</strong></p>
+          <p style="margin-top:1em; font-size:0.9em;">Billing commitment affects final pricing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADD-ONS -->
+  <section class="section" style="background: var(--white);">
+    <div class="section-inner">
+      <span class="section-label">Add-On Solutions</span>
+      <h2>Additional Microsoft Solutions</h2>
+      <div class="table-scroll">
+        <table class="service-table" aria-label="Add-On Solutions">
+          <thead>
+            <tr>
+              <th>Solution</th>
+              <th>Description</th>
+              <th>Pricing</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Microsoft 365 Copilot</td>
+              <td>AI across email, meetings, and documents</td>
+              <td class="tier-better">$30–31.50 / user</td>
+            </tr>
+            <tr>
+              <td>Power BI Pro</td>
+              <td>Analytics &amp; dashboards</td>
+              <td class="tier-better">$14–16.80 / user</td>
+            </tr>
+            <tr>
+              <td>Power Automate Premium</td>
+              <td>Advanced workflows</td>
+              <td class="tier-better">$15–18 / user</td>
+            </tr>
+            <tr>
+              <td>Power Automate Process</td>
+              <td>Enterprise process automation</td>
+              <td class="tier-best">$150–180 / month</td>
+            </tr>
+            <tr>
+              <td>Copilot Studio</td>
+              <td>Custom AI agents &amp; bots</td>
+              <td class="tier-best">$200–210 / month</td>
+            </tr>
+            <tr>
+              <td>Microsoft 365 Backup</td>
+              <td>Backup for Exchange, OneDrive &amp; SharePoint</td>
+              <td class="tier-good">$3 / user</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW WE DELIVER -->
+  <section class="section" style="background: var(--bg); padding-top: 0.5em; padding-bottom: 3em;">
+    <div class="section-inner">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2em; flex-wrap: wrap;">
+        <div class="vision-card" style="max-width: 100%;">
+          <span class="section-label">How We Deliver</span>
+          <h2 style="font-size: 1.4em; margin-bottom: 1em;">Full-Service Partnership</h2>
+          <ul style="color: var(--text-light); font-size: 1em; line-height: 1.85; padding-left: 1.3em;">
+            <li>Good/Better/Best packages for every need and budget</li>
+            <li>Custom branding, migration, and integration support</li>
+            <li>Dedicated account and technical advisory from Saulved experts</li>
+            <li>Hardware procurement: PCs, phones, tablets, and other business devices — sourced, configured, and set up for your environment</li>
+            <li>Device brands include Surface, Dell, Lenovo, HP — discounts available</li>
+            <li>Startup &amp; growth planning: legal, HR, payroll, compliance, and funding strategy support</li>
+          </ul>
+        </div>
+        <div class="vision-card" style="max-width: 100%;">
+          <span class="section-label">Licensing Transparency</span>
+          <h2 style="font-size: 1.4em; margin-bottom: 1em;">No Surprises</h2>
+          <ul style="color: var(--text-light); font-size: 1em; line-height: 1.85; padding-left: 1.3em;">
+            <li>RapidStart requires Microsoft 365 and Power Apps licensing</li>
+            <li>We license only what each role needs — no blanket over-licensing</li>
+            <li>Flexible payment plans: annual, monthly, or month-to-month</li>
+            <li>Self-implementation, partner-assisted, or fully managed service</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA STRIP -->
+  <div class="cta-strip">
+    <h2>Not Sure What You Need?</h2>
+    <p>Let's talk through your setup. We'll give you an honest assessment of where you are and what actually makes sense for your organization.</p>
+    <a class="btn-white" href="https://outlook.office.com/bookwithme/user/9c886b92bda84c339f2d5009458be7c6@saulved.com?anonymous&ep=plink" target="_blank">Schedule a Conversation</a>
+    <p style="margin-top:1.5em; margin-bottom:0; font-size:0.92em;">
+      Or call directly: <a href="tel:9418120407" style="color:var(--blue-light); text-decoration:none; font-weight:600;">941-812-0407</a>
     </p>
   </div>
 
-  <div class="table-scroll">
-  <table class="service-table" aria-label="Saulved Service Options">
-    <thead>
-      <tr>
-        <th>Category</th>
-        <th>Good</th>
-        <th>Better</th>
-        <th>Best</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Email & Collaboration</td>
-        <td class="good">M365 Business Basic<br>$6/user</td>
-        <td class="better">M365 Business Standard<br>$12.50/user</td>
-        <td class="best">M365 Business Premium<br>$22/user</td>
-      </tr>
-      <tr>
-        <td>CRM</td>
-        <td class="good">RapidStart CRM<br>Included, first 10 users<br><small>+ Power Apps $5–6/user</small></td>
-        <td class="better">RapidStart + Additional Users<br>$15/user<br><small>+ Power Apps Premium $20–24/user</small></td>
-        <td class="best">Full Power Apps Premium<br>$20–24/user<br><small>Role-based licensing</small></td>
-      </tr>
-      <tr>
-        <td>Voice</td>
-        <td class="good">Teams Phone w/ Calling Plan<br>Domestic $17/user<br>Int'l $40/user</td>
-        <td class="better">Teams Phone + SIP<br>Starting at $12/user</td>
-        <td class="best">Teams Phone + Direct Routing<br>Custom</td>
-      </tr>
-      <tr>
-        <td>Meetings</td>
-        <td class="good">Teams (included)</td>
-        <td class="better">Teams Premium<br>$12/user</td>
-        <td class="best">Teams Premium + Advanced Features</td>
-      </tr>
-      <tr>
-        <td>Devices</td>
-        <td class="good">BYOD + Intune</td>
-        <td class="better">Surface Go 3<br>$600<br>Dell/Lenovo $999-$1800</td>
-        <td class="best">Surface Pro 9 + Autopilot<br>$1,200</td>
-      </tr>
-      <tr>
-        <td>Security</td>
-        <td class="good">MFA + Defender AV</td>
-        <td class="better">Defender for Business<br>$3/user</td>
-        <td class="best">Defender for Endpoint P2<br>$5.20/user</td>
-      </tr>
-      <tr>
-        <td>Support</td>
-        <td class="good">Internal Admin</td>
-        <td class="better">Saulved Lite Support<br>$500/mo</td>
-        <td class="best">Full MSP + Support<br>$1,500+/mo</td>
-      </tr>
-      <tr>
-        <td>Implementation</td>
-        <td class="good">Self-service w/ guidance</td>
-        <td class="better">Partner-assisted<br>$4,500</td>
-        <td class="best">Full SOW-based<br>$6,500+</td>
-      </tr>
-      <tr>
-        <td>Advisory</td>
-        <td class="good">$500/mo – Basic Guidance</td>
-        <td class="better">$1,000/mo – Monthly Check-ins</td>
-        <td class="best">$2,500/mo – Fractional CTO</td>
-      </tr>
-    </tbody>
-  </table>
-  </div>
-
-  <div class="section">
-    <h2>CRM &amp; Business Applications — RapidStart</h2>
-    <p style="color:#8ab4f8; margin-bottom:1.2em; font-size:0.97em;">Built on Microsoft Power Platform. Power Apps licensing required.</p>
-    <div class="table-scroll">
-    <table class="service-table" aria-label="RapidStart Pricing">
-      <thead>
-        <tr>
-          <th>Component</th>
-          <th>Description</th>
-          <th>Pricing</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>RapidStart CRM (Sales &amp; Service)</td>
-          <td>Pre-configured CRM for Teams-first organizations</td>
-          <td class="good">Included, first 10 users</td>
-        </tr>
-        <tr>
-          <td>RapidStart Project</td>
-          <td>Project tracking &amp; delivery management</td>
-          <td class="good">Included, first 10 users</td>
-        </tr>
-        <tr>
-          <td>RapidStart Additional Users</td>
-          <td>CRM or Project access beyond first 10 users</td>
-          <td class="better">$15 / user</td>
-        </tr>
-        <tr>
-          <td>Power Apps Premium</td>
-          <td>Required for full CRM users, admins &amp; app makers</td>
-          <td class="better">$20–24 / user</td>
-        </tr>
-        <tr>
-          <td>Power Apps Per App</td>
-          <td>For light / task-based users</td>
-          <td class="good">$5–6 / user</td>
-        </tr>
-      </tbody>
-    </table>
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-brand">
+      <span class="footer-brand-name">Saulved LLC</span>
     </div>
-    <p style="color:#85ff6b; margin-top:1em; font-size:0.95em;">&#10003; Not all users require Power Apps Premium — licensing is role-based.</p>
-  </div>
-
-  <div class="section">
-    <h2>&#11088; Fully Functioning Microsoft Teams — Best Tier Example</h2>
-    <p style="color:#e4eaf7; margin-bottom:0.8em;">A typical executive-grade Teams environment includes:</p>
-    <ul>
-      <li>Microsoft 365 Business Premium</li>
-      <li>Teams Premium</li>
-      <li>Teams Phone (Domestic or International Calling)</li>
-      <li>Security, device management, governance, and backup</li>
-    </ul>
-    <p style="margin-top:1em; color:#ffdf00; font-weight:600;">Typical fully loaded cost:</p>
-    <ul>
-      <li>Domestic Calling: <strong>~$52–$62 / user</strong></li>
-      <li>International Calling: <strong>~$69–$82 / user</strong></li>
-    </ul>
-    <p style="color:#8ab4f8; font-size:0.92em;">Billing commitment affects final pricing.</p>
-  </div>
-
-  <div class="section">
-    <h2>Additional Add-On Solutions</h2>
-    <div class="table-scroll">
-    <table class="service-table" aria-label="Add-On Solutions">
-      <thead>
-        <tr>
-          <th>Solution</th>
-          <th>Description</th>
-          <th>Pricing</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Microsoft 365 Copilot</td>
-          <td>AI across email, meetings, and documents</td>
-          <td class="better">$30–31.50 / user</td>
-        </tr>
-        <tr>
-          <td>Power BI Pro</td>
-          <td>Analytics &amp; dashboards</td>
-          <td class="better">$14–16.80 / user</td>
-        </tr>
-        <tr>
-          <td>Power Automate Premium</td>
-          <td>Advanced workflows</td>
-          <td class="better">$15–18 / user</td>
-        </tr>
-        <tr>
-          <td>Power Automate Process</td>
-          <td>Enterprise process automation</td>
-          <td class="best">$150–180 / month</td>
-        </tr>
-        <tr>
-          <td>Copilot Studio</td>
-          <td>Custom AI agents &amp; bots</td>
-          <td class="best">$200–210 / month</td>
-        </tr>
-        <tr>
-          <td>Microsoft 365 Backup</td>
-          <td>Backup for Exchange, OneDrive &amp; SharePoint</td>
-          <td class="good">$3 / user</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services &amp; Pricing</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
     </div>
-  </div>
-
-  <div class="section">
-    <h2>Licensing Transparency</h2>
-    <ul>
-      <li>RapidStart requires Microsoft 365 and Power Apps licensing.</li>
-      <li>We license only what each role needs — no blanket over-licensing.</li>
-      <li>Flexible payment plans: annual, monthly, or month-to-month.</li>
-      <li>Self-implementation, partner-assisted, or fully managed service.</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>How We Deliver</h2>
-    <ul>
-      <li>Good/Better/Best packages for every need and budget</li>
-      <li>Custom branding, migration, and integration support</li>
-      <li>Dedicated account and technical advisory from Saulved experts</li>
-      <li>Device procurement: Surface, Dell, Lenovo, HP discounts available</li>
-      <li>Startup &amp; growth planning: legal, HR, payroll, compliance, and funding strategy support</li>
-    </ul>
-  </div>
-
-  <footer style="text-align:center; margin:2.5em 0 1.5em 0; color:#aaa; font-size:1.08em;">
-    &copy; 2025 Saulved | Technology & Advisory Solutions
+    <p class="footer-copy">&copy; 2025 Saulved LLC. All rights reserved.</p>
   </footer>
+
 </body>
 </html>

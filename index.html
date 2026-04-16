@@ -1,50 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Saulved LLC – Tech Solutions</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Saulved LLC — Microsoft Partner &amp; Technology Advisor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Saulved LLC is a Microsoft Partner providing M365, Teams, CRM, security, and advisory services to growing organizations.">
 </head>
 <body>
-    <nav class="site-nav">
-        <a class="nav-logo" href="index.html">Saulved</a>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Services &amp; Pricing</a>
-        </div>
-    </nav>
-    <header class="hero">
-        <div class="overlay">
-            <div class="hero-subtitle">
-                Simplifying Microsoft, telecom, and integration—so you can scale smarter.
-            </div>
-        </div>
-    </header>
-    <section class="bookings-section">
-        <a class="bookings-btn" href="https://outlook.office.com/bookwithme/user/9c886b92bda84c339f2d5009458be7c6@saulved.com?anonymous&ep=plink" target="_blank">
-            Click here to schedule a call or meeting
-        </a>
-        <a class="services-link" href="services.html">View Our Services &amp; Pricing</a>
-        <div class="phone-number">
-            <a href="tel:9418120407">941-812-0407</a>
-        </div>
-    </section>
 
-    <section class="partner-section">
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">
+        <div class="nav-brand-text">
+          <span class="nav-brand-name">Saulved</span>
+          <span class="nav-brand-tagline">Microsoft Partner &middot; Technology Advisor</span>
+        </div>
+      </a>
+      <div class="nav-toggle" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services &amp; Pricing</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Simplifying Microsoft, telecom, and integration—so you can scale smarter.</h1>
+      <p>Advisory, implementation, and managed services for growing organizations. Relationship-driven IT, done right.</p>
+      <a class="btn-primary" href="contact.html">Request a Free Assessment</a>
+    </div>
+  </div>
+
+  <!-- WHAT WE DO -->
+  <section class="section" style="background: var(--white);">
+    <div class="section-inner">
+      <span class="section-label">What We Do</span>
+      <h2>Microsoft, Done Intentionally</h2>
+      <p class="section-intro">
+        We help organizations design, deploy, and operate Microsoft 365, Teams, and Power Platform environments that are secure, scalable, and built around real business goals—not just turned on and forgotten.
+      </p>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Microsoft 365 &amp; Teams</h3>
+          <p>Email, collaboration, meetings, and voice — properly licensed, configured, and governed from day one.</p>
+        </div>
+        <div class="card">
+          <h3>CRM &amp; Power Platform</h3>
+          <p>RapidStart CRM and Power Apps solutions built on Microsoft's platform, tailored to how your team actually works.</p>
+        </div>
+        <div class="card">
+          <h3>Security &amp; Compliance</h3>
+          <p>MFA, Defender, Intune, and endpoint management — protecting your organization without slowing it down.</p>
+        </div>
+        <div class="card">
+          <h3>Advisory &amp; Strategy</h3>
+          <p>From monthly guidance to fractional CTO support — long-term thinking, not just ticket-closing.</p>
+        </div>
+        <div class="card">
+          <h3>Hardware Procurement</h3>
+          <p>PCs, phones, tablets, and business devices — sourced, configured, and ready for your environment on arrival.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section" style="background: var(--bg);">
+    <div class="section-inner">
+      <span class="section-label">How It Works</span>
+      <h2>Simple, Transparent, Repeatable</h2>
+      <p class="section-intro">
+        We follow a straightforward process so you always know where things stand — no surprises, no black boxes.
+      </p>
+      <div class="steps-row">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Conversation</h3>
+          <p>We start with a discovery call to understand your environment, goals, and pain points. No obligation, no pressure — just an honest dialogue.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>Assessment</h3>
+          <p>We audit your current setup, identify gaps, and map out a clear path forward — covering licensing, security posture, and infrastructure.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>Implementation</h3>
+          <p>We do the work: migrate, configure, deploy, and train your team. Clean, documented, and done right the first time.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <h3>Partnership</h3>
+          <p>We stay engaged — regular check-ins, proactive monitoring, and a strategic partner available when decisions need to be made.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR APPROACH — dark section -->
+  <section class="section section-dark">
+    <div class="section-inner">
+      <span class="section-label">Our Approach</span>
+      <h2>Fewer Clients. Deeper Engagement.</h2>
+      <p class="section-intro">
+        We don't believe in transactional IT or one-size-fits-all solutions. The best outcomes come from long-term relationships, clear strategy, and thoughtful execution.
+      </p>
+      <div class="card-grid">
+        <div class="card card-dark">
+          <h3>Relationship-Driven by Design</h3>
+          <p>Trust, clarity, and long-term outcomes over volume and ticket counts. Fewer clients means more focused attention on yours.</p>
+        </div>
+        <div class="card card-dark">
+          <h3>Advisory, Not Just Support</h3>
+          <p>Strategic guidance, security planning, and executive-level advising — including fractional CTO support when you need it.</p>
+        </div>
+        <div class="card card-dark">
+          <h3>Intentional Implementation</h3>
+          <p>The Microsoft ecosystem is powerful — but only when implemented well. We ensure it's properly configured, governed, and actually adopted.</p>
+        </div>
+      </div>
+      <div style="text-align:center;">
         <div class="partner-badge">
-            <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31" alt="Microsoft Partner" onerror="this.style.display='none'">
-            <div class="partner-text">
-                <span class="partner-title">Microsoft Partner</span>
-                <span class="partner-sub">Microsoft 365 &bull; Teams &bull; Dynamics 365</span>
-            </div>
+          <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31" alt="Microsoft Partner" onerror="this.style.display='none'">
+          <div class="partner-badge-text">
+            <span class="partner-badge-title">Microsoft Partner</span>
+            <span class="partner-badge-sub">Microsoft 365 &bull; Teams &bull; Dynamics 365</span>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        &copy; 2025 Saulved
-    </footer>
+  <!-- CTA STRIP -->
+  <div class="cta-strip">
+    <h2>Let's Start a Conversation</h2>
+    <p>Whether you need licensing, implementation, ongoing support, or strategic guidance — we're open to a dialogue.</p>
+    <a href="contact.html" class="btn-white">Request a Free Assessment</a>
+    <p style="margin-top:1.5em; margin-bottom:0; font-size:0.92em;">
+      Or call directly: <a href="tel:9418120407" style="color:var(--blue-light); text-decoration:none; font-weight:600;">941-812-0407</a>
+    </p>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-brand">
+      <span class="footer-brand-name">Saulved LLC</span>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services &amp; Pricing</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p class="footer-copy">&copy; 2025 Saulved LLC. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>

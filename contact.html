@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact — Saulved LLC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Contact Saulved LLC for a free assessment of your Microsoft environment, licensing review, or managed services inquiry.">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">
+        <div class="nav-brand-text">
+          <span class="nav-brand-name">Saulved</span>
+          <span class="nav-brand-tagline">Microsoft Partner &middot; Technology Advisor</span>
+        </div>
+      </a>
+      <div class="nav-toggle" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services &amp; Pricing</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html" class="active nav-cta">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <span class="eyebrow">Get in Touch</span>
+    <h1>Request a Free Assessment</h1>
+    <p>Tell us about your environment and goals. We'll follow up within one business day — no obligation, no sales pressure.</p>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <section class="section" style="background: var(--white);">
+    <div class="section-inner">
+      <div class="contact-grid">
+
+        <!-- LEFT: Info -->
+        <div class="contact-info">
+          <h3>Phone</h3>
+          <a href="tel:9418120407">941-812-0407</a>
+
+          <h3>Email</h3>
+          <a href="mailto:Christopher.DeMaria@saulved.com">Christopher.DeMaria@saulved.com</a>
+
+          <h3>Schedule Directly</h3>
+          <a href="https://outlook.office.com/bookwithme/user/9c886b92bda84c339f2d5009458be7c6@saulved.com?anonymous&ep=plink" target="_blank">Book a time on our calendar →</a>
+
+          <h3>Response Time</h3>
+          <p>We respond to all inquiries within one business day. For urgent matters, a phone call is always the fastest path.</p>
+
+          <h3>What to Expect</h3>
+          <p>After you reach out, we'll schedule a brief discovery call to understand your situation — typically 20–30 minutes. From there we can assess your environment and recommend a clear path forward.</p>
+        </div>
+
+        <!-- RIGHT: Form -->
+        <div class="contact-form-card">
+          <!--
+            FORMSPREE SETUP (one-time, ~2 minutes):
+            1. Go to https://formspree.io and sign up with Christopher.DeMaria@saulved.com
+            2. Click "New Form" and give it a name (e.g. "Saulved Contact")
+            3. Copy your Form ID (looks like: xpwzabcd)
+            4. Replace YOUR_FORM_ID below with that ID
+            After the first submission, Formspree will ask you to confirm your email.
+          -->
+          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name *</label>
+                <input type="text" id="fname" name="first_name" required placeholder="Jane">
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name *</label>
+                <input type="text" id="lname" name="last_name" required placeholder="Smith">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required placeholder="jane@company.com">
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="555-555-5555">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="company">Company / Organization</label>
+              <input type="text" id="company" name="company" placeholder="Acme Corp">
+            </div>
+
+            <div class="form-group">
+              <label for="interest">What are you most interested in?</label>
+              <select id="interest" name="interest">
+                <option value="" disabled selected>Select one…</option>
+                <option>Microsoft 365 / Teams setup or migration</option>
+                <option>CRM / Power Platform (RapidStart)</option>
+                <option>Security &amp; compliance review</option>
+                <option>Hardware procurement</option>
+                <option>Advisory / Fractional CTO</option>
+                <option>Managed services / ongoing support</option>
+                <option>General question</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Tell us about your situation *</label>
+              <textarea id="message" name="message" required placeholder="How many users, what you're using today, biggest pain points, anything else we should know…"></textarea>
+            </div>
+
+            <!-- Honeypot spam filter -->
+            <input type="text" name="_gotcha" style="display:none">
+            <input type="hidden" name="_subject" value="New inquiry from Saulved.com">
+
+            <button type="submit" class="btn-primary" style="width:100%; font-size:1.02em;">
+              Send Message
+            </button>
+            <p class="form-note">* Required fields. We'll respond within one business day.</p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-brand">
+      <span class="footer-brand-name">Saulved LLC</span>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services &amp; Pricing</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p class="footer-copy">&copy; 2025 Saulved LLC. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
